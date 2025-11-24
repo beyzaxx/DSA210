@@ -59,52 +59,25 @@ Aggregation: We found the median values for AirQuality and WaterPollution at the
 - A scatter plot to show how air quality relates to water pollution overall.
 
 
-## Statistical Test
+## Statistical Analysis
 
-- We used the Pearson correlation coefficient (r) to measure the strength and direction of the relationship.
+Pearson correlation coefficient
 
-- We also performed an Ordinary Least Squares (OLS) regression to check the results again.
+Ordinary Least Squares (OLS) regression for additional validation
 
+All steps will be conducted using Python libraries such as pandas, seaborn, matplotlib, and statsmodels.
 
+ ## Expected Outcomes
 
-## Results
+The project is expected to:
 
+Reveal the strength and direction of the relationship between air and water pollution
 
-The analysis focuses on the correlation between **Air Quality** and **Water Pollution** levels across different countries.
+Provide descriptive comparisons across countries
 
-The following Python code was used to calculate the Pearson correlation coefficient:
+Highlight potential patterns in environmental performance
 
-```python
-corr = df["AirQuality"].corr(df["WaterPollution"])
-print(corr)
-# Output: -0.454
-```
-Correlation coefficient: r = -0.454
-
-p-value: < 0.05
-
-Interpretation → There is a moderate negative link between air quality and water pollution:
-as air quality gets better (higher score), water pollution usually goes down.
-
-
-## Findings
-
-Countries in Northern Europe, like Finland, Norway, and Sweden, have good air quality and low water pollution. In the Middle East and Caribbean, air quality is bad and water is more polluted, probably because of industries and oil-related activities. The negative link (-0.45) supports the idea that environmental quality in different areas is connected. These findings show that pollutants might come from the same sources and show the need for environmental policies that look at both air and water together.
-
-
-## Limitations and Future Work
-
-The data is from just one year (2021), so it doesn't show changes over time. Air and water quality measurements use different standards, which might cause differences in results. Correlation doesn't mean one thing causes the other — other factors like GDP, industry, and CO₂ emissions might give a better picture.
-
-
-## Future directions
-
-Add more detailed water quality data, like oxygen levels, chemical content, pH, and metals. Look at data over time, like from 2010 to 2025. Use machine learning models to predict pollution levels using region-specific information. Make a visual tool using Plotly or Dash to show the data clearly.
-
-
-## Conclusion
-
-The results show that the idea that air quality and water pollution are not connected is not true. Cleaner air is linked to cleaner water — showing how environmental systems are connected and why it's important to take a whole-system approach to pollution control.
+Offer insights that may encourage integrated environmental policy approaches
 
 
 
