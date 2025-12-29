@@ -1,0 +1,9 @@
+# DSA210 Term Project Dependencies
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+openpyxl
+scipy
+scikit-learn
